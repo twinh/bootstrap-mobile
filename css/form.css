@@ -1,0 +1,179 @@
+/* 组合表单 */
+.form-combined {
+    border-top: 1px solid #dedfe0;
+}
+
+.form-combined .form-group {
+    font-size: 16px;
+    position: relative;
+    padding-left: 15px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0; /* bs */
+    border-bottom: 1px solid #dedfe0;
+    background-color: #fff; /* body */
+}
+
+.form-combined legend, .form-legend {
+    color: #666;
+    margin-bottom: 0;
+    background: #f8f9fa;
+    padding: 6px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #dedfe0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .form-combined {
+        border-top: none;
+        background-position: left top;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+
+    .form-combined .form-group, .form-combined legend, .form-legend {
+        border-bottom: none;
+    }
+
+    .form-combined .form-group, .form-combined legend, .form-legend {
+        background-position: left bottom;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+}
+
+.form-group.activatable:active {
+    background-color: #e5e6e7;
+}
+
+.form-combined .control-label,
+.form-group > .col-control {
+    display: table-cell;
+    line-height: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-combined .control-label {
+    width: 95px;
+    vertical-align: top;
+    font-weight: normal; /* bs */
+    margin-bottom: 0; /* bs */
+}
+
+/* label显示右边框,则input自动缩进 */
+.control-label.border-right + .col-control input {
+    padding-left: 20px;
+}
+
+.form-combined .form-control {
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 16px; /* bs */
+    box-shadow: none; /* bs */
+    line-height: normal; /* bs */
+    display: inline-block; /* bs */
+    padding-left: 0; /* bs */
+    padding-right: 15px;
+}
+
+.form-combined .form-control:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none; /* bs */
+}
+
+.form-combined textarea.form-control {
+    margin-top: 13px; /* FIXME 不同平台手机对不齐 */
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.form-combined .input-group .form-control {
+    float: none; /* 垂直居中 */
+}
+
+.form-combined .has-feedback .form-control {
+    padding-right: 44px;
+}
+
+.form-combined .form-control-feedback {
+    height: 44px;
+    line-height: 44px;
+    width: 44px;
+    color: #a6a6a6;
+    pointer-events: visible; /* bs */
+}
+
+.form-combined .form-control-feedback:hover {
+    text-decoration: none;
+}
+
+.col-control .input-group-btn .btn {
+    width: 110px; /* TODO rm */
+    height: 100%;
+    font-size: 16px;
+    padding: 0;
+    color: #00a5e0;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+/* 底部提交按钮组 */
+.form-combined .form-actions {
+    padding: 15px;
+    background: none;
+    border: 0;
+}
+
+.form-combined .form-actions .btn {
+    font-size: 16px;
+}
+
+/* Checkbox + Radio */
+.form-combined .checkbox, .form-combined .radio {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-combined .checkbox label, .form-combined .radio label {
+    line-height: normal;
+    padding-left: 20px;
+}
+
+.form-combined .checkbox-sm label, .form-combined-sm .radio label {
+    padding-left: 5px;
+}
+
+.form-combined .checkbox label::before, .form-combined .radio label::before {
+    width: 21px;
+    height: 21px;
+}
+
+.form-combined .checkbox label::after {
+    padding-top: 0;
+    padding-left: 4px;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.form-combined .radio label::after {
+    margin-top: 2px;
+    margin-left: -18px;
+}
+
+/* 改bootstrap配置 */
+.col-control .input-group-btn .btn.disabled {
+    color: #a6a6a6;
+    opacity: 1;
+}
+
+/* 按钮禁用颜色 #a6a6a6, 点击背景颜色 #e5e6e7 */

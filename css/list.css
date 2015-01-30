@@ -1,0 +1,226 @@
+.list {
+    font-size: 16px;
+    padding-left: 0;
+    list-style: none;
+    background-color: #fff;
+    border-top: #dedfe0 1px solid;
+    border-bottom: #dedfe0 1px solid;
+}
+
+.list > li {
+    border-bottom: 1px solid #dedfe0;
+    position: relative;
+}
+
+.list > li:last-child {
+    border-bottom: 0;
+    background-image: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
+        border-top: 0;
+        border-bottom: 0;
+        -webkit-background-size: 100% 1px;
+    }
+
+    .list > li {
+        border-bottom: none;
+        background-position: left bottom;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+}
+
+/* 列表全局配置 */
+.list a:not([class*="text-"]) {
+    color: inherit;
+}
+
+.list a:hover {
+    text-decoration: none;
+}
+
+/* 列表项目,可以加到li或a标签中 */
+.list-item {
+    padding: 10px 15px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+a.list-item:active, .list-link:active, .list-item.active {
+    background: #f8f9fa;
+}
+
+/* 列表栏目,相当于td */
+.list-col {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+
+.list-col + .list-col {
+    padding-left: 15px;
+}
+
+.list-row + .list-row {
+    margin-top: 10px;
+}
+
+.list-col > a > img,
+.list-col > img,
+.list-row > a > img,
+.list-row > img {
+    width: 100%;
+}
+
+/* 用于.list-col定位 */
+.list-middle {
+    vertical-align: middle;
+}
+
+.list-bottom {
+    vertical-align: bottom;
+}
+
+/* 列表标题 */
+.list-heading {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-heading .badge {
+    margin-top: 3px;
+}
+
+/* 显示在右边的次要文字 */
+.list-heading .text-secondary {
+    margin-right: 15px;
+    float: right;
+}
+
+/* 标题下面的文案,一般用于简介,子标题 */
+.list-body {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #808080;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+}
+
+/* 带左右边框*/
+.list-bordered {
+    border: 1px solid #dedfe0;
+}
+
+/* 斑马纹 */
+.list-striped li:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* 鼠标移过更改背景颜色 */
+.list-hover > li:hover {
+    background-color: #f5f5f5;
+}
+
+/* 缩进列表 */
+.list-indented {
+    overflow: hidden;
+}
+
+.list-indented li {
+    margin-left: 15px;
+}
+
+.list-indented .list-item {
+    padding-left: 0;
+}
+
+/* 修复缩进后右边内边距丢失的问题 */
+.list-indented li.list-item {
+    padding-right: 30px;
+}
+
+/* 嵌入列表 */
+.list-inset {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #dedfe0;
+}
+
+/* 紧凑列表 */
+.list-condensed .list-item {
+    padding: 5px 8px;
+}
+
+/* 无边框列表 */
+.list-borderless li {
+    border-bottom: 0;
+}
+
+/* 左右布局列表 */
+.list-label {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: normal; /* bs */
+    margin-bottom: 0; /* bs */
+}
+
+.list-content {
+    padding-left: 0;
+}
+
+/* 列表头部 */
+.list-header {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    color: #222
+}
+
+.list-header .list-heading {
+    font-size: 20px;
+}
+
+.list-header .small {
+    margin-top: 8px;
+}
+
+/* 列表右边的图标 */
+.list-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 32px;
+    line-height: 32px;
+    overflow: auto;
+    margin: auto;
+}
+
+/* 显示列表加载中和加载完成样式 */
+.list-loading, .list-finished {
+    text-align: center;
+    padding: 1em;
+}
+
+/* 列表为空的提示文案 */
+.list-empty {
+    text-align: center;
+    padding: 6em 0;
+}

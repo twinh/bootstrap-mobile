@@ -1,0 +1,1 @@
+// https://github.com/madrobby/zepto/issues/618
