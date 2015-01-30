@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=yes">
-    <title><?= $headerTitle ?: $setting('site.subTitle') ?></title>
-    <link rel="stylesheet" href="<?= $appAsset(['assets/components/font-awesome/css/font-awesome.min.css', 'plugins/ui/assets/bootstrap/css/bootstrap.min.css']) ?>">
-    <link rel="stylesheet" href="<?= $appAsset([
-    'plugins/ui/assets/border.css',
-    'plugins/ui/assets/modal.css',
-    'plugins/ui/assets/loading.css',
-    'plugins/ui/assets/tab.css',
-    'plugins/ui/assets/form.css',
-    'plugins/ui/assets/list.css',
-    'plugins/ui/assets/switch.css',
-    'assets/components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css',
-    'plugins/ui/assets/example.css'
-]) ?>">
-    <script type="text/javascript" src="<?= $asset->concat(['components/zepto/zepto.min.js', 'components/requirejs/require.js', 'require.js']) ?>"></script>
+    <title>Bootstrap Mobile</title>
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/border.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/tab.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/switch.css">
+
+    <link rel="stylesheet" href="../css/example.css">
+<!-- 'assets/components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css', -->
+
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
 </head>
 <body>
 
@@ -1395,15 +1398,14 @@
         </div>
     </div>
 </div>
-<script src="<?= $appAsset([
-    'plugins/ui/assets/base.js',
-    'plugins/ui/assets/data.js',
-    'plugins/ui/assets/modal.js',
-    'plugins/ui/assets/loading.js',
-    'plugins/ui/assets/form.js',
-    'plugins/ui/assets/bootstrap/js/bootstrap.js',
-    'assets/bootstrapPopup.js',
-]) ?>"></script>
+
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../data.js"></script>
+<script type="text/javascript" src="../modal.js"></script>
+<script type="text/javascript" src="../loading.js"></script>
+<script type="text/javascript" src="../form.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+
 <script>
     $('.example').each(function (i) {
         var lines = $(this).html().split("\n");
