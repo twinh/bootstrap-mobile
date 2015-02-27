@@ -34,27 +34,15 @@
     width: 100%;
 }
 
-.list > li:active {
+/* 点击高亮背景, list-link用于整个ul的所有li, list-item-link用与单独一个li */
+.list-link > li:active, .list-link > li.active,
+.list-item-link:active, .list-item-link.active {
     background-color: #e5e6e7;
-    margin-left: 0;
-    padding-left: 15px;
 }
 
-/*a.list-item:active, .list-link:active, .list-item.active {
-    background-color: #e5e6e7;
-    margin-left: -15px;
-    padding-left: 15px;
-    display: block;
-    width: auto;
-}*/
-
-.list > li:active + li {
-    border-top-color: transparent;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .list > li:active + li {
-        background-image: none;
-    }
+/* 应用在li标签上,使用手型鼠标提示用户可以点击 */
+.list-link > li, .list-item-link {
+    cursor: pointer;
 }
 
 /* 列表栏目,相当于td */
