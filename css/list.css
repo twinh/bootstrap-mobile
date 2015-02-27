@@ -144,6 +144,21 @@
     padding-right: 30px;
 }
 
+/* 缩进列表点击时,本行和下一行的的上边框占满整格 */
+.list-indented.list-link > li:active, .list-indented > .list-item-link:active,
+.list-indented.list-link > li.active, .list-indented > .list-item-link.active,
+.list-indented.list-link > li:active + li, .list-indented > .list-item-link:active + li,
+.list-indented.list-link > li.active + li, .list-indented > .list-item-link.active + li {
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+/* 缩进列表点击时,修复下一行缩进错误 */
+.list-indented.list-link > li:active + li.list-item, .list-indented > .list-item-link:active + li.list-item,
+.list-indented.list-link > li.active + li.list-item, .list-indented > .list-item-link.active + li.list-item {
+    padding-right: 15px;
+}
+
 /* 嵌入列表 */
 .list-inset {
     margin-left: 15px;
