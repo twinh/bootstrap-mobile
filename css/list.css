@@ -34,8 +34,27 @@
     width: 100%;
 }
 
-a.list-item:active, .list-link:active, .list-item.active {
+.list > li:active {
     background-color: #e5e6e7;
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+/*a.list-item:active, .list-link:active, .list-item.active {
+    background-color: #e5e6e7;
+    margin-left: -15px;
+    padding-left: 15px;
+    display: block;
+    width: auto;
+}*/
+
+.list > li:active + li {
+    border-top-color: transparent;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list > li:active + li {
+        background-image: none;
+    }
 }
 
 /* 列表栏目,相当于td */
