@@ -8,31 +8,13 @@
 }
 
 .list > li {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #dedfe0;
     position: relative;
 }
 
 .list > li:first-child {
     border: none;
     background-image: none;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .list {
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
-        background-color: #fff;
-        border-top: 0;
-        border-bottom: 0;
-        -webkit-background-size: 100% 1px;
-    }
-
-    .list > li {
-        border-top: 0;
-        background-repeat: repeat-x;
-        -webkit-background-size: 100% 1px;
-        background-position: left top;
-        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    }
 }
 
 /* 列表全局配置 */
@@ -123,7 +105,8 @@ a.list-item:active, .list-link:active, .list-item.active {
 
 /* 带左右边框*/
 .list-bordered {
-    border: 1px solid #dedfe0;
+    border-left: 1px solid #dedfe0;
+    border-right: 1px solid #dedfe0;
 }
 
 /* 斑马纹 */
@@ -224,4 +207,40 @@ a.list-item:active, .list-link:active, .list-item.active {
 .list-empty {
     text-align: center;
     padding: 6em 0;
+}
+
+/* 对Retina等2倍设备像素比的优化 */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
+        background-color: #fff;
+        border-top: 0;
+        border-bottom: 0;
+        -webkit-background-size: 100% 1px;
+    }
+
+    .list > li {
+        border-top: 0;
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+        background-position: left top;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+    }
+
+    .list-bordered {
+        position: relative;
+        border: none;
+    }
+
+    .list-bordered:before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: -50% -50%;
+    }
 }
