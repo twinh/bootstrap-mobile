@@ -227,12 +227,12 @@ a.list-item:active, .list-link:active, .list-item.active {
         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
     }
 
-    .list-bordered {
+    .list-inset, .list-bordered {
         position: relative;
         border: none;
     }
 
-    .list-bordered:before {
+    .list-inset:before, .list-bordered:before {
         content: "";
         width: 200%;
         height: 200%;
