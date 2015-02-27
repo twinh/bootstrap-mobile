@@ -3,7 +3,7 @@
  * @link https://github.com/istvan-ujjmeszaros/bootstrap-touchspin
  * @todo 转为一个插件,提供外部接口
  */
-(function (root, $) {
+(function ($) {
     $(document).on('click', '.number-spinner button', function () {
         var btn = $(this),
             oldValue = btn.closest('.number-spinner').find('input').val().trim(),
@@ -20,4 +20,4 @@
         }
         btn.closest('.number-spinner').find('input').val(newVal).trigger('changed');
     });
-}(window, $));
+}($));
