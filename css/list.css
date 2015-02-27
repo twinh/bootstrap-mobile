@@ -17,6 +17,24 @@
     background-image: none;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
+        background-color: #fff;
+        border-top: 0;
+        border-bottom: 0;
+        -webkit-background-size: 100% 1px;
+    }
+
+    .list > li {
+        border-top: 0;
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+        background-position: left top;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+    }
+}
+
 /* 列表全局配置 */
 .list a:not([class*="text-"]) {
     color: inherit;
@@ -166,14 +184,34 @@
     border: 1px solid #dedfe0;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list-inset, .list-bordered {
+        position: relative;
+        border: none;
+    }
+
+    .list-inset:before, .list-bordered:before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: -50% -50%;
+    }
+}
+
 /* 紧凑列表 */
 .list-condensed .list-item {
     padding: 5px 8px;
 }
 
 /* 无边框列表 */
-.list-borderless li {
+.list-borderless > li {
     border-bottom: 0;
+    background-image: none;
 }
 
 /* 左右布局列表 */
@@ -229,40 +267,4 @@
 .list-empty {
     text-align: center;
     padding: 6em 0;
-}
-
-/* 对Retina等2倍设备像素比的优化 */
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .list {
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
-        background-color: #fff;
-        border-top: 0;
-        border-bottom: 0;
-        -webkit-background-size: 100% 1px;
-    }
-
-    .list > li {
-        border-top: 0;
-        background-repeat: repeat-x;
-        -webkit-background-size: 100% 1px;
-        background-position: left top;
-        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    }
-
-    .list-inset, .list-bordered {
-        position: relative;
-        border: none;
-    }
-
-    .list-inset:before, .list-bordered:before {
-        content: "";
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border: 1px solid #dedfe0;
-        -webkit-transform: scale(0.5);
-        -webkit-transform-origin: -50% -50%;
-    }
 }
