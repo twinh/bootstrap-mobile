@@ -8,29 +8,31 @@
 }
 
 .list > li {
-    border-bottom: 1px solid #dedfe0;
+    border-top: 1px solid #e0e0e0;
     position: relative;
 }
 
-.list > li:last-child {
-    border-bottom: 0;
+.list > li:first-child {
+    border: none;
     background-image: none;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .list {
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
         border-top: 0;
         border-bottom: 0;
         -webkit-background-size: 100% 1px;
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,transparent),color-stop(0.5,#e0e0e0),to(#e0e0e0));
     }
 
     .list > li {
-        border-bottom: none;
-        background-position: left bottom;
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
+        border-top: 0;
         background-repeat: repeat-x;
         -webkit-background-size: 100% 1px;
+        background-position: left top;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
     }
 }
 
