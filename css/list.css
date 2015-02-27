@@ -40,7 +40,7 @@
     color: inherit;
 }
 
-.list a:hover {
+.list a:hover, .list a:focus {
     text-decoration: none;
 }
 
@@ -53,8 +53,6 @@
 }
 
 a.list-item:active, .list-link:active, .list-item.active {
-    /*background: #f8f9fa;*/
-
     background-color: #e5e6e7;
 }
 
