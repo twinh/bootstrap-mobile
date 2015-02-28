@@ -54,9 +54,8 @@
 
 /* 列表分割线 */
 .list-divider {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    color: #999;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: #f8f9fa;
 }
 
