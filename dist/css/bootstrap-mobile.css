@@ -385,7 +385,7 @@
     outline: none;
     font-size: 16px; /* bs */
     box-shadow: none; /* bs */
-    line-height: normal; /* bs */
+    line-height: normal; /* bs */ /* FIXME mac下导致底部1px截断 */
     display: inline-block; /* bs */
     padding-left: 0; /* bs */
     padding-right: 15px;
@@ -495,31 +495,30 @@
 }
 
 .list > li {
-    border-bottom: 1px solid #dedfe0;
+    border-top: 1px solid #dedfe0;
     position: relative;
 }
 
-.list > li:last-child {
-    border-bottom: 0;
+.list > li:first-child {
+    border: none;
     background-image: none;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .list {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
+        background-color: #fff;
         border-top: 0;
         border-bottom: 0;
         -webkit-background-size: 100% 1px;
-        background-position: left bottom;
-        background-repeat: repeat-x;
-        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,transparent),color-stop(0.5,#e0e0e0),to(#e0e0e0));
     }
 
-    .list > li {
-        border-bottom: none;
+    .list > li, .list > li:first-child.list-divider {
+        border-top: 0;
+        background-repeat: repeat-x;
         -webkit-background-size: 100% 1px;
         background-position: left top;
-        background-repeat: repeat-x;
-        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.5,transparent),color-stop(0.5,#e0e0e0),to(#e0e0e0));
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
     }
 }
 
@@ -528,7 +527,7 @@
     color: inherit;
 }
 
-.list a:hover {
+.list a:hover, .list a:focus {
     text-decoration: none;
 }
 
@@ -540,8 +539,27 @@
     width: 100%;
 }
 
-a.list-item:active, .list-link:active, .list-item.active {
-    background: #f8f9fa;
+/* 列表分割线 */
+.list-divider {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #999;
+    background-color: #f8f9fa;
+}
+
+.list-divider .list-heading {
+    font-size: 14px;
+}
+
+/* 点击高亮背景, list-link用于整个ul的所有li, list-item-link用与单独一个li */
+.list-link > li:active, .list-link > li.active,
+.list-item-link:active, .list-item-link.active {
+    background-color: #e5e6e7;
+}
+
+/* 应用在li标签上,使用手型鼠标提示用户可以点击 */
+.list-link > li, .list-item-link {
+    cursor: pointer;
 }
 
 /* 列表栏目,相当于td */
@@ -611,7 +629,8 @@ a.list-item:active, .list-link:active, .list-item.active {
 
 /* 带左右边框*/
 .list-bordered {
-    border: 1px solid #dedfe0;
+    border-left: 1px solid #dedfe0;
+    border-right: 1px solid #dedfe0;
 }
 
 /* 斑马纹 */
@@ -642,11 +661,45 @@ a.list-item:active, .list-link:active, .list-item.active {
     padding-right: 30px;
 }
 
+/* 缩进列表点击时,本行和下一行的的上边框占满整格 */
+.list-indented.list-link > li:active, .list-indented > .list-item-link:active,
+.list-indented.list-link > li.active, .list-indented > .list-item-link.active,
+.list-indented.list-link > li:active + li, .list-indented > .list-item-link:active + li,
+.list-indented.list-link > li.active + li, .list-indented > .list-item-link.active + li {
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+/* 缩进列表点击时,修复下一行缩进错误 */
+.list-indented.list-link > li:active + li.list-item, .list-indented > .list-item-link:active + li.list-item,
+.list-indented.list-link > li.active + li.list-item, .list-indented > .list-item-link.active + li.list-item {
+    padding-right: 15px;
+}
+
 /* 嵌入列表 */
 .list-inset {
     margin-left: 15px;
     margin-right: 15px;
     border: 1px solid #dedfe0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .list-inset, .list-bordered {
+        position: relative;
+        border: none;
+    }
+
+    .list-inset:before, .list-bordered:before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: -50% -50%;
+    }
 }
 
 /* 紧凑列表 */
@@ -655,8 +708,9 @@ a.list-item:active, .list-link:active, .list-item.active {
 }
 
 /* 无边框列表 */
-.list-borderless li {
+.list-borderless > li {
     border-bottom: 0;
+    background-image: none;
 }
 
 /* 左右布局列表 */

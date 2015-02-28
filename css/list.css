@@ -26,7 +26,7 @@
         -webkit-background-size: 100% 1px;
     }
 
-    .list > li {
+    .list > li, .list > li:first-child.list-divider {
         border-top: 0;
         background-repeat: repeat-x;
         -webkit-background-size: 100% 1px;
@@ -50,6 +50,18 @@
     display: table;
     table-layout: fixed;
     width: 100%;
+}
+
+/* 列表分割线 */
+.list-divider {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #999;
+    background-color: #f8f9fa;
+}
+
+.list-divider .list-heading {
+    font-size: 14px;
 }
 
 /* 点击高亮背景, list-link用于整个ul的所有li, list-item-link用与单独一个li */
