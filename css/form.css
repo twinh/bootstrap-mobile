@@ -201,7 +201,7 @@
     background: #fff;
 }
 
-.form-inset .form-content .form-group:last-child {
+.form-inset .form-content > .form-group:last-child {
     border-bottom: none;
     background-image: none;
 }
@@ -209,6 +209,11 @@
 .form-inset .form-actions {
     padding-left: 0;
     padding-right: 0;
+}
+
+.form-inset .form-legend:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -228,11 +233,6 @@
         -webkit-transform: scale(0.5);
         -webkit-transform-origin: -50% -50%;
         border-radius: 14px;
-    }
-
-    .form-inset .form-legend:first-child {
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
     }
 }
 
