@@ -16,6 +16,7 @@ gulp.task('minify', function () {
         'css/list.css',
         'css/table.css',
         'css/switch.css',
+        'css/checkbox.css',
         'css/spinner.css',
         'css/notice.css'
     ];

@@ -161,19 +161,19 @@
     padding-left: 5px;
 }
 
-.form .checkbox label::before, .form .radio label::before {
+.form .checkbox span::before, .form .radio span::before {
     width: 21px;
     height: 21px;
 }
 
-.form .checkbox label::after {
+.form .checkbox span::after {
     padding-top: 0;
     padding-left: 4px;
     font-size: 13px;
     line-height: 21px;
 }
 
-.form .radio label::after {
+.form .radio span::after {
     margin-top: 2px;
     margin-left: -18px;
 }
