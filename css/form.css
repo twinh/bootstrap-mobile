@@ -44,7 +44,7 @@
     /* 首个legend需要加上border-top */
     .form > fieldset:first-child > legend,
     .form > .form-legend:first-child,
-    .form .form-content .form-legend:first-child {
+    .form > .form-content > .form-legend:first-child {
         background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
         background-color: #f7f8fa;
         border-top: 0;
@@ -237,6 +237,10 @@
         -webkit-transform: scale(0.5);
         -webkit-transform-origin: -50% -50%;
         border-radius: 14px;
+    }
+
+    .form-inset .form-content .form-legend:first-child {
+        background-image: none;
     }
 }
 
