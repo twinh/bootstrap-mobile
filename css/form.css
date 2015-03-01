@@ -186,16 +186,38 @@
 .form-inset {
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid #dedfe0;
+    border: none;
+    background: none;
+}
+
+.form-inset::before {
+    background: none;
+    border: none;
+}
+
+.form-inset .form-content {
+    border-radius: 7px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.form-inset .form-content .form-group:last-child {
+    border-bottom: none;
+    background-image: none;
+}
+
+.form-inset .form-actions {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .form-inset, .list-bordered {
+    .form-inset .form-content {
         position: relative;
         border: none;
     }
 
-    .form-inset:before, .list-bordered:before {
+    .form-inset .form-content:before {
         content: "";
         width: 200%;
         height: 200%;
@@ -205,22 +227,12 @@
         border: 1px solid #dedfe0;
         -webkit-transform: scale(0.5);
         -webkit-transform-origin: -50% -50%;
-    }
-}
-
-/* 圆角表单 */
-.form-round {
-    border-radius: 7px
-}
-
-.form-round > .form-group:last-child {
-    border-bottom: 0;
-    background-image: none;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .form-round::before {
         border-radius: 14px;
+    }
+
+    .form-inset .form-legend:first-child {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
     }
 }
 
