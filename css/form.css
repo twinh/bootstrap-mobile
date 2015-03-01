@@ -140,8 +140,10 @@
     border: 0;
 }
 
-.form .form-actions .btn {
+.form-actions .btn {
     font-size: 16px;
+    padding-top: 9px; /* 高度调到44px */
+    padding-bottom: 9px;
 }
 
 /* Checkbox + Radio */
