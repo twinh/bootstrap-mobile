@@ -1,10 +1,10 @@
 /* 组合表单 */
-.form-combined {
+.form {
     border-top: 1px solid #dedfe0;
     background-color: #fff;
 }
 
-.form-combined .form-group {
+.form .form-group {
     font-size: 16px;
     position: relative;
     padding-left: 15px;
@@ -15,7 +15,7 @@
     border-bottom: 1px solid #dedfe0;
 }
 
-.form-combined legend, .form-legend {
+.form legend, .form-legend {
     color: #666;
     margin-bottom: 0;
     background: #f8f9fa;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .form-combined {
+    .form {
         border-top: none;
         background-position: left top;
         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
@@ -33,7 +33,7 @@
         -webkit-background-size: 100% 1px;
     }
 
-    .form-combined .form-group, .form-combined legend, .form-legend {
+    .form .form-group, .form legend, .form-legend {
         border-bottom: none;
         background-position: left bottom;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
@@ -42,7 +42,7 @@
     }
 
     /* 首个legend需要加上border-top */
-    .form-combined > fieldset:first-child > legend, .form-combined > .form-legend:first-child {
+    .form > fieldset:first-child > legend, .form > .form-legend:first-child {
         background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
         background-color: #f7f8fa;
         border-top: 0;
@@ -55,7 +55,7 @@
     background-color: #e5e6e7;
 }
 
-.form-combined .control-label,
+.form .control-label,
 .form-group > .col-control {
     display: table-cell;
     line-height: 44px;
@@ -64,7 +64,7 @@
     text-overflow: ellipsis;
 }
 
-.form-combined .control-label {
+.form .control-label {
     width: 95px;
     vertical-align: top;
     font-weight: normal; /* bs */
@@ -76,7 +76,7 @@
     padding-left: 20px;
 }
 
-.form-combined .form-control {
+.form .form-control {
     border: none;
     background: none;
     -webkit-appearance: none;
@@ -89,27 +89,27 @@
     padding-right: 15px;
 }
 
-.form-combined .form-control:focus {
+.form .form-control:focus {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     box-shadow: none; /* bs */
 }
 
-.form-combined textarea.form-control {
+.form textarea.form-control {
     margin-top: 13px; /* FIXME 不同平台手机对不齐 */
     padding-left: 0;
     padding-top: 0;
 }
 
-.form-combined .input-group .form-control {
+.form .input-group .form-control {
     float: none; /* 垂直居中 */
 }
 
-.form-combined .has-feedback .form-control {
+.form .has-feedback .form-control {
     padding-right: 44px;
 }
 
-.form-combined .form-control-feedback {
+.form .form-control-feedback {
     height: 44px;
     line-height: 44px;
     width: 44px;
@@ -117,7 +117,7 @@
     pointer-events: visible; /* bs */
 }
 
-.form-combined .form-control-feedback:hover {
+.form .form-control-feedback:hover {
     text-decoration: none;
 }
 
@@ -134,44 +134,44 @@
 }
 
 /* 底部提交按钮组 */
-.form-combined .form-actions {
+.form .form-actions {
     padding: 15px;
     background: none;
     border: 0;
 }
 
-.form-combined .form-actions .btn {
+.form .form-actions .btn {
     font-size: 16px;
 }
 
 /* Checkbox + Radio */
-.form-combined .checkbox, .form-combined .radio {
+.form .checkbox, .form .radio {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.form-combined .checkbox label, .form-combined .radio label {
+.form .checkbox label, .form .radio label {
     line-height: normal;
     padding-left: 20px;
 }
 
-.form-combined .checkbox-sm label, .form-combined-sm .radio label {
+.form .checkbox-sm label, .form-sm .radio label {
     padding-left: 5px;
 }
 
-.form-combined .checkbox label::before, .form-combined .radio label::before {
+.form .checkbox label::before, .form .radio label::before {
     width: 21px;
     height: 21px;
 }
 
-.form-combined .checkbox label::after {
+.form .checkbox label::after {
     padding-top: 0;
     padding-left: 4px;
     font-size: 13px;
     line-height: 21px;
 }
 
-.form-combined .radio label::after {
+.form .radio label::after {
     margin-top: 2px;
     margin-left: -18px;
 }
