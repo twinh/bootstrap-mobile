@@ -207,7 +207,7 @@
     border-radius: 7px
 }
 
-.form-round .form-group:last-child {
+.form-round > .form-group:last-child {
     border-bottom: 0;
     background-image: none;
 }
