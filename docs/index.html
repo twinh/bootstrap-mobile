@@ -814,7 +814,7 @@
 
             <p>支持控件概览</p>
             <div class="example">
-                <form action="#" class="form-combined">
+                <form action="#" class="form-combined" id="form-1">
                     <div class="form-legend">基础设置</div>
 
                     <div class="form-group">
@@ -965,6 +965,19 @@
                         <button type="submit" class="btn btn-primary btn-block">保存</button>
                     </div>
                 </form>
+
+                <div id="form-styles" style="padding:15px">
+                  <button type="button" id="form-indented" class="btn btn-default">.form-indented</button>
+                  <button type="button" id="form-inset" class="btn btn-default">.form-inset</button>
+                  <button type="button" id="form-round" class="btn btn-default">.form-round</button>
+                </div>
+
+                <script>
+                  $('#form-styles button').click(function(){
+                    $('#form-1').toggleClass(this.id);
+                    $(this).toggleClass('active');
+                  });
+                </script>
             </div>
 
             <p>Radio</p>
@@ -1206,24 +1219,22 @@
 
             <p>Inset form</p>
             <div class="example">
-              <form class="form-inset">
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
-                  <div class="col-xs-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <form action="#" class="form-combined form-inset form-round">
+                <div class="form-group has-feedback has-clear">
+                  <div class="col-control">
+                    <input type="text" class="form-control" placeholder="QQ号/手机号/邮箱">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
-                  <div class="col-xs-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                <div class="form-group has-feedback has-clear">
+                  <div class="col-control">
+                    <input type="password" class="form-control" placeholder="密码">
                   </div>
                 </div>
-                <div class="form-group">
-                  <div class="col-xs-offset-2 col-xs-10">
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                  </div>
-                </div>
+
+                <!--
+                <div class="form-group form-actions">
+                  <button type="submit" class="btn btn-primary btn-block">保存</button>
+                </div>-->
               </form>
             </div>
 
