@@ -1,6 +1,7 @@
 /* 组合表单 */
 .form-combined {
     border-top: 1px solid #dedfe0;
+    background-color: #fff;
 }
 
 .form-combined .form-group {
@@ -12,7 +13,6 @@
     table-layout: fixed;
     margin-bottom: 0; /* bs */
     border-bottom: 1px solid #dedfe0;
-    background-color: #fff; /* body */
 }
 
 .form-combined legend, .form-legend {

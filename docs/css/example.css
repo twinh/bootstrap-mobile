@@ -38,7 +38,7 @@ body {
     border-radius: 4px 4px 0 0;
 }
 
-.example:after {
+.example::after {
     position: absolute;
     top: 15px;
     left: 15px;

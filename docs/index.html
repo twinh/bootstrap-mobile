@@ -28,7 +28,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-8 col-md-offset-2 example-list">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 example-list">
 
             <div class="example-nav">
                 <div class="btn-group btn-group-justified tab-btn-group">
@@ -1055,7 +1055,7 @@
 
             <p>Checkbox带左边label</p>
             <div class="example">
-                <form class="form-combined">
+                <form class="form-combined border-top">
                     <div class="form-group">
                         <label class="control-label">爱好</label>
                         <div class="col-control">
@@ -1083,7 +1083,7 @@
             </div>
 
             <p>Checkbox</p>
-            <div class="example">
+            <div class="example" style="background: #f8f9fa">
                 <form class="form-combined">
                     <div class="form-group">
                         <label for="inputEmail3" class="control-label">账号</label>
@@ -1200,6 +1200,62 @@
                 </div>
                 <div class="form-group form-actions">
                   <button type="submit" class="btn btn-primary btn-block">保存</button>
+                </div>
+              </form>
+            </div>
+
+            <p>Inset form</p>
+            <div class="example">
+              <form class="form-inset">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                  <div class="col-xs-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
+                  <div class="col-xs-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <p>Horizontal form</p>
+            <div class="example">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                  <div class="col-xs-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
+                  <div class="col-xs-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-offset-2 col-xs-10">
+                    <div class="checkbox">
+                      <input id="rm" type="checkbox">
+                      <label for="rm">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                  </div>
                 </div>
               </form>
             </div>
