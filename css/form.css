@@ -53,7 +53,7 @@
     }
 }
 
-.form-group.activatable:active {
+.form-link:active {
     background-color: #e5e6e7;
 }
 
