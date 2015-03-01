@@ -35,12 +35,18 @@
 
     .form-combined .form-group, .form-combined legend, .form-legend {
         border-bottom: none;
-    }
-
-    .form-combined .form-group, .form-combined legend, .form-legend {
         background-position: left bottom;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0));
         background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+
+    /* 首个legend需要加上border-top */
+    .form-combined > fieldset:first-child > legend, .form-combined > .form-legend:first-child {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
+        background-color: #f7f8fa;
+        border-top: 0;
+        border-bottom: 0;
         -webkit-background-size: 100% 1px;
     }
 }
