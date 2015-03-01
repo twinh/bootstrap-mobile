@@ -8,7 +8,7 @@
 }
 
 .list > li {
-    border-top: 1px solid #dedfe0;
+    border-top: 1px solid #dedfe0; /* 在list-intended时,点击高亮整行背景,和下一行的上边框,因此只能用border-top */
     position: relative;
 }
 
