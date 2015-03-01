@@ -23,7 +23,7 @@ gulp.task('minify', function () {
     return gulp.src(files)
         .pipe(concat('bootstrap-mobile.css'))
         .pipe(gulp.dest('dist/css/'))
-        .pipe(minifyCSS())
+        .pipe(minifyCSS({advanced:false}))
         .pipe(rename('bootstrap-mobile.min.css'))
         .pipe(gulp.dest('dist/css/'));
 });
