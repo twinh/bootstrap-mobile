@@ -253,7 +253,11 @@
 }
 
 /* 列表右边的图标 */
-.list-icon {
+.list-item.has-feedback {
+    padding-right: 30px;
+}
+
+.list-feedback {
     position: absolute;
     top: 0;
     right: 0;
