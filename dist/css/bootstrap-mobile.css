@@ -719,7 +719,7 @@
     overflow: hidden;
 }
 
-.list-indented li {
+.list-indented > li {
     margin-left: 15px;
 }
 
@@ -728,7 +728,7 @@
 }
 
 /* 修复缩进后右边内边距丢失的问题 */
-.list-indented li.list-item {
+.list-indented > li.list-item {
     padding-right: 30px;
 }
 
@@ -748,16 +748,16 @@
 }
 
 /* 缩进列表不更改divider样式 */
-.list-indented .list-divider {
+.list-indented > .list-divider {
     margin-left: 0;
     padding-left: 15px;
 }
 
-.list-indented .list-divider.list-item {
+.list-indented > .list-divider.list-item {
     padding-right: 15px;
 }
 
-.list-indented .list-divider + li {
+.list-indented > .list-divider + li {
     padding-left: 15px;
     margin-left: 0;
 }
