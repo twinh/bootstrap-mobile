@@ -591,7 +591,7 @@
 }
 
 /* 列表全局配置 */
-.list a:not([class*="text-"]) {
+.list .list-item:not([class*="text-"]) {
     color: inherit;
 }
 
@@ -627,10 +627,6 @@
 /* 应用在li标签上,使用手型鼠标提示用户可以点击 */
 .list-link > li:not(.list-divider), .list-item-link {
     cursor: pointer;
-}
-
-.list-indented .list-divider {
-
 }
 
 /* 列表栏目,相当于td */
