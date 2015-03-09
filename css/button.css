@@ -1,0 +1,51 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .btn {
+        position: relative;
+        border-width: 0;
+    }
+
+    .btn::before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        border-radius: 8px;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: -50% -50%;
+    }
+
+    .btn-sm::before {
+        border-radius: 6px;
+    }
+
+    .btn-lg::before {
+        border-radius: 12px;
+    }
+
+    .btn-primary::before {
+        border-color: #0faae3;
+    }
+
+    .btn-success::before {
+        border-color: #4cae4c;
+    }
+
+    .btn-info::before {
+        border-color: #46b8da;
+    }
+
+    .btn-warning::before {
+        border-color: #f07d30;
+    }
+
+    .btn-danger::before {
+        border-color: #f94437;
+    }
+
+    .btn-link::before {
+        display: none;
+    }
+}

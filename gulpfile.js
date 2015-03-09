@@ -9,6 +9,7 @@ var concat = require('gulp-concat');
 gulp.task('minify', function () {
     var files = [
         'css/border.css',
+        'css/button.css',
         'css/modal.css',
         'css/loading.css',
         'css/tab.css',
