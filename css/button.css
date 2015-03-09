@@ -1,10 +1,10 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .btn {
+    .btn.hairline {
         position: relative;
         border-width: 0;
     }
 
-    .btn::before {
+    .btn.hairline::before {
         content: "";
         width: 200%;
         height: 200%;
@@ -17,35 +17,35 @@
         -webkit-transform-origin: -50% -50%;
     }
 
-    .btn-sm::before {
+    .btn-sm.hairline::before {
         border-radius: 6px;
     }
 
-    .btn-lg::before {
+    .btn-lg.hairline::before {
         border-radius: 12px;
     }
 
-    .btn-primary::before {
+    .btn-primary.hairline::before {
         border-color: #0faae3;
     }
 
-    .btn-success::before {
+    .btn-success.hairline::before {
         border-color: #4cae4c;
     }
 
-    .btn-info::before {
+    .btn-info.hairline::before {
         border-color: #46b8da;
     }
 
-    .btn-warning::before {
+    .btn-warning.hairline::before {
         border-color: #f07d30;
     }
 
-    .btn-danger::before {
+    .btn-danger.hairline::before {
         border-color: #f94437;
     }
 
-    .btn-link::before {
+    .btn-link.hairline::before {
         display: none;
     }
 }
