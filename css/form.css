@@ -85,7 +85,6 @@
     outline: none;
     font-size: 16px; /* bs */
     box-shadow: none; /* bs */
-    line-height: normal; /* bs */
     display: inline-block; /* bs */
     padding-left: 0; /* bs */
     padding-right: 15px;
@@ -98,7 +97,7 @@
 }
 
 .form textarea.form-control {
-    margin-top: 13px; /* FIXME 不同平台手机对不齐 */
+    margin-top: 11px;
     padding-left: 0;
     padding-top: 0;
 }
