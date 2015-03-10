@@ -495,13 +495,13 @@
 }
 
 /* 底部提交按钮组 */
-.form .form-actions {
+.form .form-footer {
     padding: 15px;
-    background: none;
+    background: #f7f8fa;
     border: 0;
 }
 
-.form-actions .btn {
+.form-footer .btn {
     font-size: 16px;
     padding-top: 9px; /* 高度调到44px */
     padding-bottom: 9px;
@@ -569,9 +569,10 @@
     background-image: none;
 }
 
-.form-inset .form-actions {
+.form-inset .form-footer {
     padding-left: 0;
     padding-right: 0;
+    background: none;
 }
 
 .form-inset .form-legend:first-child {
