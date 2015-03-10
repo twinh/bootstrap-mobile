@@ -121,10 +121,9 @@
     margin-top: 3px;
 }
 
-/* 显示在右边的次要文字 */
-.list-heading .text-secondary {
-    margin-right: 15px;
-    float: right;
+/* 显示在右边的文字 */
+.list-heading > .pull-right {
+    line-height: 24px; /* 上下居中,高度等于.list-heading的高度,即16px * 1.5 */
 }
 
 /* 标题下面的文案,一般用于简介,子标题 */
