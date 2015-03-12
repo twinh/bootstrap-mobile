@@ -12,6 +12,7 @@
 }
 
 body {
+    background: #fff;
     -webkit-user-select: inherit;
     -webkit-font-smoothing: antialiased;
 }

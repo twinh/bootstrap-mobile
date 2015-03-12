@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=8c54883922d3eba0fb66)
- * Config saved to config.json and https://gist.github.com/8c54883922d3eba0fb66
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=0c909148fa3b11a49663)
+ * Config saved to config.json and https://gist.github.com/0c909148fa3b11a49663
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -212,7 +212,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #666666;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 input,
 button,
@@ -253,7 +253,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1348,7 +1348,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -2957,7 +2957,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3003,7 +3003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fdfdfd;
+    border-bottom-color: #f8f8f8;
   }
 }
 .nav-pills > li {
@@ -3071,7 +3071,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #fdfdfd;
+    border-bottom-color: #f8f8f8;
   }
 }
 .tab-content > .tab-pane {

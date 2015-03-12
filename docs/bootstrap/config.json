@@ -11,7 +11,7 @@
     "@brand-info": "#5bc0de",
     "@brand-warning": "#f28c48",
     "@brand-danger": "#fa5b50",
-    "@body-bg": "#fdfdfd",
+    "@body-bg": "#f8f8f8",
     "@text-color": "#666",
     "@link-color": "@brand-primary",
     "@link-hover-color": "darken(@link-color, 15%)",
@@ -398,5 +398,5 @@
     "dropdown.js",
     "modal.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=8c54883922d3eba0fb66"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=0c909148fa3b11a49663"
 }
