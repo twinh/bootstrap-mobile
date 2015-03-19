@@ -8,7 +8,15 @@
     padding-left: 5px;
 }
 
-.checkbox span::before {
+.checkbox .checkbox-label {
+    pointer-events: none; /* 修复fastclick冲突,导致很难点中 */
+}
+
+.checkbox .checkbox-label > * {
+    pointer-events: initial;
+}
+
+.checkbox .checkbox-label::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -123,6 +131,14 @@
     display: inline-block;
     position: relative;
     padding-left: 5px;
+}
+
+.radio .radio-label {
+    pointer-events: none; /* 修复fastclick冲突,导致很难点中 */
+}
+
+.radio .radio-label > * {
+    pointer-events: initial;
 }
 
 .radio .radio-label::before {
