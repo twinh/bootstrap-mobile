@@ -131,11 +131,7 @@
     font-size: 12px;
     line-height: 16px;
     margin-top: 8px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: #808080;
-    max-height: 32px;
-    -webkit-line-clamp: 2;
 }
 
 /* 带左右边框*/
