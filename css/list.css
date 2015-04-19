@@ -112,15 +112,16 @@
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.5;
+    position: relative;
 }
 
-.list-heading .badge {
-    margin-top: 3px;
-}
-
-/* 显示在右边的文字 */
+/* 显示在右边的图标或状态,垂直居中 */
 .list-heading > .pull-right {
-    line-height: 24px; /* 上下居中,高度等于.list-heading的高度,即16px * 1.5 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 87.5%
 }
 
 /* 标题下面的文案,一般用于简介,子标题 */
