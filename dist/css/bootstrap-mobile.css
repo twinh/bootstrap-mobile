@@ -781,6 +781,7 @@
 .list-heading > .pull-right {
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 0;
     font-size: 87.5%
