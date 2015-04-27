@@ -537,6 +537,11 @@
     text-decoration: none;
 }
 
+/* 输入框右边的文案,如"元","个" */
+.col-control .input-group-addon {
+    background: transparent;
+}
+
 .col-control .input-group-btn .btn {
     width: 110px; /* TODO rm */
     height: 100%;
