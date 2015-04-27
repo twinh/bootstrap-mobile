@@ -115,16 +115,6 @@
     position: relative;
 }
 
-/* 显示在右边的图标或状态,垂直居中 */
-.list-heading > .pull-right {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 0;
-    font-size: 87.5%
-}
-
 /* 标题下面的文案,一般用于简介,子标题 */
 .list-body {
     font-size: 12px;
