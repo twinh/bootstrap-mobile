@@ -35,8 +35,8 @@
 }
 
 .loading-overlay p {
-     margin-bottom: 0;
- }
+    margin: .5em .5em 0 .5em;
+}
 
 .loading-overlay .loading-spinner {
     width: 37px;
