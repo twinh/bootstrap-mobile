@@ -81,3 +81,11 @@ body {
         border-width: 0;
     }
 }
+
+.example-footer-bar {
+    height: 150px;
+}
+
+.footer-bar {
+    position: absolute;
+}

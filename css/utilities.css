@@ -23,3 +23,15 @@
     transform: translateY(-50%);
     right: 0;
 }
+
+.footer-bar {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
