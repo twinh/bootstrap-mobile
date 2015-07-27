@@ -139,6 +139,11 @@
     outline: none;
 }
 
+.col-control .input-group-addon:last-child {
+    border-width: 0;
+    background: transparent;
+}
+
 /* 底部提交按钮组 */
 .form .form-footer {
     padding: 15px;

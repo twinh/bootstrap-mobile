@@ -64,3 +64,13 @@
     background-color: #00a5e0;
     border-color: #00a5e0;
 }
+
+.tab-underline-sm > li > a {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.tab-underline-sm > li.active {
+    border-bottom-width: 2px;
+}
