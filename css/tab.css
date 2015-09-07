@@ -16,7 +16,6 @@
 }
 
 .tab-underline > li {
-    min-width: 70px;
     box-flex: 1;
     -webkit-box-flex: 1;
     text-align: center;
