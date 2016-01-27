@@ -6,7 +6,7 @@
     "@gray": "lighten(#000, 33.5%)",
     "@gray-light": "lighten(#000, 65%)",
     "@gray-lighter": "lighten(#000, 93.5%)",
-    "@brand-primary": "#1cb7f0",
+    "@brand-primary": "#ff7f30",
     "@brand-success": "#5cb85c",
     "@brand-info": "#5bc0de",
     "@brand-warning": "#f28c48",
@@ -82,6 +82,9 @@
     "@btn-danger-bg": "@brand-danger",
     "@btn-danger-border": "darken(@btn-danger-bg, 5%)",
     "@btn-link-disabled-color": "@gray-light",
+    "@btn-border-radius-base": "@border-radius-base",
+    "@btn-border-radius-large": "@border-radius-large",
+    "@btn-border-radius-small": "@border-radius-small",
     "@input-bg": "#fff",
     "@input-bg-disabled": "@gray-lighter",
     "@input-color": "@gray",
@@ -213,6 +216,7 @@
     "@jumbotron-bg": "@gray-lighter",
     "@jumbotron-heading-color": "inherit",
     "@jumbotron-font-size": "ceil((@font-size-base * 1.5))",
+    "@jumbotron-heading-font-size": "ceil((@font-size-base * 4.5))",
     "@state-success-text": "#3c763d",
     "@state-success-bg": "#dff0d8",
     "@state-success-border": "darken(spin(@state-success-bg, -10), 5%)",
@@ -395,5 +399,5 @@
     "dropdown.js",
     "modal.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=c655cde0de73202291d6"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=7a9810636a050ebc225c"
 }

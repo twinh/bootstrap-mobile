@@ -41,3 +41,26 @@
 .modal-footer {
     padding: 10px;
 }
+
+/* 底部弹出Modal窗口 */
+.modal-bottom.fade:not(.in) .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+}
+
+.modal-bottom .modal-dialog {
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.modal-bottom .close {
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: -14px;
+}
+
+.modal-bottom .modal-content {
+    border-radius: 0;
+}
