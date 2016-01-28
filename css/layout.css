@@ -87,4 +87,5 @@
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     flex-grow: 1;
+    display: block; /* 兼容安卓 */
 }
