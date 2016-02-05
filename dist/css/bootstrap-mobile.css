@@ -55,6 +55,11 @@
     border-top: 4px solid transparent;
     border-left: 4px solid;
 }
+
+.no-shadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -840,6 +845,30 @@
     /*.form-inset .form-body .form-legend:first-child {
         background-image: none;
     }*/
+}
+
+/* select优化 */
+.select-wrapper {
+    font-weight: normal;
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+.select-wrapper::before {
+    position: absolute;
+    content: '';
+    right: 6px;
+    top: 50%;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    margin-top: -2px;
+}
+
+.select-wrapper select {
+    -webkit-appearance: none;
+    line-height: normal;
 }
 
 /* 按钮禁用颜色 #a6a6a6, 点击背景颜色 #e5e6e7 */

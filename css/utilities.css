@@ -55,3 +55,8 @@
     border-top: 4px solid transparent;
     border-left: 4px solid;
 }
+
+.no-shadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
