@@ -145,6 +145,15 @@
     align-items: stretch
 }
 
+.flex-equal > li,
+.flex-equal > a {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: block; /* 兼容安卓 */
+    width: 1px; /* 确保宽度不会被撑开 */
+}
+
 .flex-grow-1 {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
