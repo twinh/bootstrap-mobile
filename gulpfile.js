@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var prefix = require('gulp-autoprefixer');
-var minifyCSS = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var jshint = require('gulp-jshint');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
@@ -27,7 +27,9 @@ gulp.task('minify', function () {
     return gulp.src(files)
         .pipe(concat('bootstrap-mobile.css'))
         .pipe(gulp.dest('dist/css/'))
-        .pipe(minifyCSS({advanced:false}))
+        .pipe(cleanCSS({
+            advanced: false
+        }))
         .pipe(rename('bootstrap-mobile.min.css'))
         .pipe(gulp.dest('dist/css/'));
 });
