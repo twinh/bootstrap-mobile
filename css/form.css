@@ -278,4 +278,28 @@
     line-height: normal;
 }
 
+/* 点击select右边的图标可显示select选项 */
+.form select + .bm-angle-right {
+    pointer-events: none;
+}
+
+/* 内联Radio */
+.col-control .radio-inline {
+    margin-left: 4px;
+}
+
+.col-control .radio-inline + .radio-inline {
+    margin-left: 10px;
+}
+
+.col-control .radio-inline .radio-label::before {
+    margin-top: 11px;
+    margin-left: -3px;
+}
+
+.col-control .radio-inline .radio-label::after {
+    margin-top: 13px !important;
+    margin-left: -1px !important;
+}
+
 /* 按钮禁用颜色 #a6a6a6, 点击背景颜色 #e5e6e7 */
