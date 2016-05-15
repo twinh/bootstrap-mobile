@@ -38,6 +38,7 @@ gulp.task('uglify', function () {
     var files = [
         'js/form.js',
         'js/loading.js',
+        'js/modal.js',
         'js/spinner.js'
     ];
     return gulp.src(files)
