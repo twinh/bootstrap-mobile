@@ -1,4 +1,20 @@
 (function ($) {
+    // http://stackoverflow.com/questions/9038625/detect-if-device-is-ios
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (!iOS) {
+        return;
+    }
+
+    var $root = $('html, body');
+    $(document)
+        .on('focus', 'input', function (e) {
+            $root.addClass('fixfixed');
+        })
+        .on('blur', 'input', function (e) {
+            $root.removeClass('fixfixed');
+        });
+})(jQuery);
+(function ($) {
     $(document).on('click', '.has-clear .form-control-feedback', function () {
         var target = $(this).data('target') || $(this).prev();
         $(target).val('');
@@ -55,14 +71,42 @@
     };
 } ($));
 (function ($) {
+    // 对底部modal框超出屏幕高度做自适应
     var oldShow = $.fn.modal.Constructor.prototype.show;
     $.fn.modal.Constructor.prototype.show = function () {
         oldShow.call(this, arguments);
-        if (this.$element.hasClass('modal-bottom')) {
-            var height = this.$element.find('.modal-header').outerHeight() + this.$element.find('.modal-footer').outerHeight() - 1;
-            this.$element.find('.modal-body').css('max-height', $(window).height() - height);
-        }
+        this.updateBodyHeight(this.$element);
     };
+
+    var oldHandleUpdate = $.fn.modal.Constructor.prototype.handleUpdate;
+    $.fn.modal.Constructor.prototype.handleUpdate = function () {
+        oldHandleUpdate.call(this, arguments);
+        this.updateBodyHeight(this.$element);
+    };
+
+    $.fn.modal.Constructor.prototype.updateBodyHeight = function ($element) {
+        if (!$element.hasClass('modal-bottom')) {
+            return;
+        }
+        var height = $element.find('.modal-header').outerHeight() + $element.find('.modal-footer').outerHeight() - 1;
+        $element.find('.modal-body').css('max-height', $(window).height() - height);
+    };
+
+    // 解决iOS底部弹窗后可以继续往下滚动的问题
+    // https://github.com/twbs/bootstrap/issues/14839
+    var scrollTop = 0;
+    var $doc = $(document);
+    var $root = $('html, body');
+    var $body = $('body');
+    $doc.on('show.bs.modal', '.modal-bottom', function() {
+        scrollTop = $body.scrollTop();
+        $root.addClass('modal-fixfixed');
+    });
+
+    $doc.on('hide.bs.modal', '.modal-bottom', function() {
+        $root.removeClass('modal-fixfixed');
+        $body.scrollTop(scrollTop);
+    });
 })(jQuery);
 /**
  * @link http://bootsnipp.com/snippets/featured/bootstrap-number-spinner

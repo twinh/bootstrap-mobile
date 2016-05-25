@@ -60,3 +60,8 @@
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.fixfixed .fixed,
+.fixfixed .footer-bar {
+    display: none;
+}

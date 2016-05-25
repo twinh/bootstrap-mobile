@@ -64,3 +64,15 @@
 .modal-bottom .modal-content {
     border-radius: 0;
 }
+
+/* 解决iOS底部弹窗后可以继续往下滚动的问题 */
+.modal-fixfixed {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.modal-fixfixed .modal-backdrop.in {
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
