@@ -36,7 +36,6 @@ gulp.task('minify', function () {
 
 gulp.task('uglify', function () {
     var files = [
-        'js/fixfixed.js',
         'js/form.js',
         'js/loading.js',
         'js/modal.js',

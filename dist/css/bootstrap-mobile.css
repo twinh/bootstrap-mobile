@@ -60,11 +60,6 @@
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
-.fixfixed .fixed,
-.fixfixed .footer-bar {
-    display: none;
-}
 .flex {
     display: -webkit-box;
     display: -webkit-flex;
