@@ -184,6 +184,7 @@
 
 .list-indented > .list-divider + li {
     padding-left: 15px;
+    padding-right: 15px;
     margin-left: 0;
 }
 
