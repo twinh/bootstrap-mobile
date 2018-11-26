@@ -1,0 +1,22 @@
+// hairline
+@import '../../../node_modules/blear.scss.hairline/src/_index.scss';
+
+.border {
+  @include hairline($border-color);
+
+  &-top {
+    @include hairline-top($border-color);
+  }
+
+  &-right {
+    @include hairline-right($border-color);
+  }
+
+  &-bottom {
+    @include hairline-bottom($border-color);
+  }
+
+  &-left {
+    @include hairline-left($border-color);
+  }
+}
