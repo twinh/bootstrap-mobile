@@ -1,6 +1,3 @@
-// hairline
-@import '../../../node_modules/blear.scss.hairline/src/_index.scss';
-
 .border {
   @include hairline($border-color);
 
