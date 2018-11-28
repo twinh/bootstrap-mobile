@@ -1,19 +1,24 @@
 .border {
+  position: relative;
   @include hairline($border-color);
 
   &-top {
+    position: relative;
     @include hairline-top($border-color);
   }
 
   &-right {
+    position: relative;
     @include hairline-right($border-color);
   }
 
   &-bottom {
+    position: relative;
     @include hairline-bottom($border-color);
   }
 
   &-left {
+    position: relative;
     @include hairline-left($border-color);
   }
 }
