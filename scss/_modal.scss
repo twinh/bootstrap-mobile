@@ -35,6 +35,7 @@
   .modal-footer {
     border: 0;
     padding: 0;
+    @include hairline-top($border-color);
   }
 
   .modal-footer > .btn {
@@ -59,7 +60,6 @@
   }
 
   .modal-footer > .btn + .btn {
-    position: relative;
     @include hairline-left($border-color);
   }
 }
