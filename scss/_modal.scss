@@ -57,4 +57,9 @@
       box-shadow: none;
     }
   }
+
+  .modal-footer > .btn + .btn {
+    position: relative;
+    @include hairline-left($border-color);
+  }
 }
