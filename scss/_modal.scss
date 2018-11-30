@@ -62,4 +62,8 @@
   .modal-footer > .btn + .btn {
     @include hairline-left($border-color);
   }
+
+  .modal-footer > .btn-primary {
+    color: $primary;
+  }
 }
