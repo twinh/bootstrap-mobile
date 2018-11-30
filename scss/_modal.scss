@@ -24,6 +24,10 @@
     overflow: hidden;
   }
 
+  .modal-header {
+    display: none; /* 暂不支持 */
+  }
+
   .modal-body {
     display: flex;
     align-items: center;
