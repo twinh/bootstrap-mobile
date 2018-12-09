@@ -1,0 +1,51 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .btn.hairline {
+        position: relative;
+        border-width: 0;
+    }
+
+    .btn.hairline::before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        border-radius: 8px;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: -50% -50%;
+    }
+
+    .btn-sm.hairline::before {
+        border-radius: 6px;
+    }
+
+    .btn-lg.hairline::before {
+        border-radius: 12px;
+    }
+
+    .btn-primary.hairline::before {
+        border-color: #0faae3;
+    }
+
+    .btn-success.hairline::before {
+        border-color: #4cae4c;
+    }
+
+    .btn-info.hairline::before {
+        border-color: #46b8da;
+    }
+
+    .btn-warning.hairline::before {
+        border-color: #f07d30;
+    }
+
+    .btn-danger.hairline::before {
+        border-color: #f94437;
+    }
+
+    .btn-link.hairline::before {
+        display: none;
+    }
+}
