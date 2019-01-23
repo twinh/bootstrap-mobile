@@ -10,6 +10,11 @@
     display: -webkit-box;
 }
 
+// 解决border—bottom被clearfix覆盖
+.nav.tab-underline:after {
+  display: block;
+}
+
 .tab-underline::-webkit-scrollbar {
     height: 0;
     width: 0;
