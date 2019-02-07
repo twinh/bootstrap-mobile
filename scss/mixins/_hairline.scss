@@ -53,7 +53,7 @@
 
 @mixin hairline-top($border-color: #ccc, $border-style: solid) {
   position: relative;
-  border-width: 0;
+  border-width: 0 !important;
 
   &:after {
     border-top: 1px $border-style $border-color;
@@ -63,7 +63,7 @@
 
 @mixin hairline-right($border-color: #ccc, $border-style: solid) {
   position: relative;
-  border-width: 0;
+  border-width: 0 !important;
 
   &:after {
     border-right: 1px $border-style $border-color;
@@ -73,7 +73,7 @@
 
 @mixin hairline-bottom($border-color: #ccc, $border-style: solid) {
   position: relative;
-  border-width: 0;
+  border-width: 0 !important;
 
   &:after {
     border-bottom: 1px $border-style $border-color;
@@ -83,7 +83,7 @@
 
 @mixin hairline-left($border-color: #ccc, $border-style: solid) {
   position: relative;
-  border-width: 0;
+  border-width: 0 !important;
 
   &:after {
     border-left: 1px $border-style $border-color;
