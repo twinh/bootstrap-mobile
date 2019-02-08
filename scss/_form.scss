@@ -103,7 +103,7 @@
 }
 
 .form .input-group .form-control {
-    float: none; /* 垂直居中 */
+    height: auto; /* 自动拉伸 */
 }
 
 .form .has-feedback .form-control {
@@ -137,6 +137,7 @@
     background: none;
     -webkit-appearance: none;
     outline: none;
+    vertical-align: baseline; // why?
 }
 
 .col-control .input-group-addon:last-child {
