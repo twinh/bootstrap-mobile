@@ -3,13 +3,13 @@
     var oldShow = $.fn.modal.Constructor.prototype.show;
     $.fn.modal.Constructor.prototype.show = function () {
         oldShow.call(this, arguments);
-        this.updateBodyHeight(this.$element);
+        this.updateBodyHeight($(this._element));
     };
 
     var oldHandleUpdate = $.fn.modal.Constructor.prototype.handleUpdate;
     $.fn.modal.Constructor.prototype.handleUpdate = function () {
         oldHandleUpdate.call(this, arguments);
-        this.updateBodyHeight(this.$element);
+        this.updateBodyHeight($(this._element));
     };
 
     $.fn.modal.Constructor.prototype.updateBodyHeight = function ($element) {
