@@ -2,6 +2,10 @@
   border: 0;
 }
 
+.modal-header {
+  @include hairline-bottom($border-color);
+}
+
 .modal-body {
   font-size: 1rem;
   overflow-y: auto;
@@ -9,6 +13,10 @@
 
 .modal-title {
   font-size: 1rem;
+}
+
+.modal-footer {
+  @include hairline-top($border-color);
 }
 
 /* 底部弹出Modal窗口 */
