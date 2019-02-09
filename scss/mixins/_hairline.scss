@@ -32,6 +32,7 @@
 
 @mixin hairline($border-color: #ccc, $border-radius: 0, $border-style: solid) {
   position: relative;
+  border-width: 0 !important;
 
   &:after {
     border: 1px $border-style $border-color;
