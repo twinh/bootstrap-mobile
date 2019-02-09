@@ -64,6 +64,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    vertical-align: middle; /* input-group 上下居中 */
 }
 
 .form .control-label {
