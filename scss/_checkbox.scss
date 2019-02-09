@@ -66,7 +66,7 @@
   opacity: 0.65;
 }
 
-.checkbox input[type="checkbox"]:disabled + .checkbox-lable::before {
+.checkbox input[type="checkbox"]:disabled + .checkbox-label::before {
   background-color: #eeeeee;
   cursor: not-allowed;
 }
@@ -267,4 +267,18 @@
 
 .radio-success input[type="radio"]:checked + .radio-label::after {
   background-color: #5cb85c;
+}
+
+/* 兼容BS3 */
+.checkbox-inline input[type=checkbox], .checkbox input[type=checkbox], .radio-inline input[type=radio], .radio input[type=radio] {
+  position: absolute;
+  margin-left: -20px;
+}
+
+.checkbox label {
+  min-height: 20px;
+}
+
+.checkbox .checkbox-label::after {
+  padding-top: 0
 }
