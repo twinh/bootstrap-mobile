@@ -141,6 +141,10 @@
   vertical-align: baseline; // why?
 }
 
+.col-control .input-group-btn .btn::after {
+  border-width: 0;
+}
+
 .col-control .input-group-addon:last-child {
   border-width: 0;
   background: transparent;
