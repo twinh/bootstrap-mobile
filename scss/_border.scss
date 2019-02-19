@@ -18,6 +18,13 @@
   }
 }
 
+.border-0 {
+  background: none !important; // 兼容旧的border
+  &:after {
+    border-width: 0 !important;
+  }
+}
+
 /**
  * 1px border hack
  * @link https://github.com/frozenui/baseui/blob/master/1.1.0/css-debug/basic/atom.css
