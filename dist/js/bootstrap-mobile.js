@@ -81,15 +81,15 @@
     var scrollTop = 0;
     var $doc = $(document);
     var $root = $('html, body');
-    var $body = $('body');
+    var $win = $(window);
     $doc.on('show.bs.modal', '.modal-bottom', function() {
-        scrollTop = $body.scrollTop();
+        scrollTop = $win.scrollTop();
         $root.addClass('modal-fixfixed');
     });
 
     $doc.on('hide.bs.modal', '.modal-bottom', function() {
         $root.removeClass('modal-fixfixed');
-        $body.scrollTop(scrollTop);
+        $win.scrollTop(scrollTop);
     });
 })(jQuery);
 /**
