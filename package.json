@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {},
   "devDependencies": {
     "blear.scss.hairline": "^1.0.4",
