@@ -22,13 +22,13 @@ gulp.task('minify', function () {
         'css/switch.css',
         'css/checkbox.css',
         'css/spinner.css',
-        'css/notice.css'
+        'css/notice.css',
     ];
     return gulp.src(files)
         .pipe(concat('bootstrap-mobile.css'))
         .pipe(gulp.dest('dist/css/'))
         .pipe(cleanCSS({
-            advanced: false
+            advanced: false,
         }))
         .pipe(rename('bootstrap-mobile.min.css'))
         .pipe(gulp.dest('dist/css/'));
@@ -39,7 +39,7 @@ gulp.task('uglify', function () {
         'js/form.js',
         'js/loading.js',
         'js/modal.js',
-        'js/spinner.js'
+        'js/spinner.js',
     ];
     return gulp.src(files)
         .pipe(concat('bootstrap-mobile.js'))

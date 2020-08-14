@@ -30,7 +30,7 @@
         },
         hide: function () {
             this.$loadingEl.hide();
-        }
+        },
     });
 
     $.fn.loading = function (option) {
