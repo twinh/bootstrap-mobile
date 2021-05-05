@@ -27,13 +27,13 @@
 }
 
 .btn-lg {
-  &:after {
+  &::after {
     @include hairline-border-radius($btn-border-radius-lg);
   }
 }
 
 .btn-sm {
-  &:after {
+  &::after {
     @include hairline-border-radius($btn-border-radius-sm);
   }
 }

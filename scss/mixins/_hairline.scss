@@ -10,14 +10,13 @@
   -webkit-transform-origin: top left;
   transform-origin: top left;
   pointer-events: none;
-
   width: percentage(1);
   height: percentage(1);
   -webkit-transform: scale(1);
   transform: scale(1);
 
   @for $i from 2 through 3 {
-    @media (-webkit-min-device-pixel-ratio: $i), (min-device-pixel-ratio: $i) {
+    @media (-webkit-min-device-pixel-ratio: $i) {
       width: percentage($i);
       height: percentage($i);
       -webkit-transform: scale(1/$i);
@@ -34,9 +33,11 @@
   position: relative;
   border-width: 0 !important;
 
-  &:after {
+  &::after {
     border: 1px $border-style $border-color;
+
     @include hairline-border-radius($border-radius);
+
     @extend %border;
   }
 }
@@ -46,7 +47,7 @@
 
   @if isPercentageUnit($border-radius) == false {
     @for $i from 2 through 3 {
-      @media(-webkit-min-device-pixel-ratio: $i), (min-device-pixel-ratio: $i) {
+      @media (-webkit-min-device-pixel-ratio: $i) {
         border-radius: $border-radius * $i;
       }
     }
@@ -57,8 +58,9 @@
   position: relative;
   border-width: 0 !important;
 
-  &:after {
+  &::after {
     border-top: 1px $border-style $border-color;
+
     @extend %border;
   }
 }
@@ -67,8 +69,9 @@
   position: relative;
   border-width: 0 !important;
 
-  &:after {
+  &::after {
     border-right: 1px $border-style $border-color;
+
     @extend %border;
   }
 }
@@ -77,8 +80,9 @@
   position: relative;
   border-width: 0 !important;
 
-  &:after {
+  &::after {
     border-bottom: 1px $border-style $border-color;
+
     @extend %border;
   }
 }
@@ -87,8 +91,9 @@
   position: relative;
   border-width: 0 !important;
 
-  &:after {
+  &::after {
     border-left: 1px $border-style $border-color;
+
     @extend %border;
   }
 }
@@ -97,8 +102,10 @@
   @if $no-radius == true {
     border-radius: 0;
   }
-  &:after {
+
+  &::after {
     border-width: 0;
+
     @if $no-radius == true {
       border-radius: 0;
     }
