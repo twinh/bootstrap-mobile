@@ -1,3 +1,4 @@
+/* global jQuery */
 (function ($) {
     var Loading = function (options) {
         options && $.extend(this, options);
@@ -47,4 +48,4 @@
     $.loading = function (options) {
         return $('body').loading(options);
     };
-} ($));
+} (jQuery));
