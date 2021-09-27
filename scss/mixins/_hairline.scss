@@ -2,6 +2,8 @@
 
 // 发丝线
 
+@use "sass:math";
+
 %border {
   position: absolute;
   content: " ";
@@ -19,8 +21,8 @@
     @media (-webkit-min-device-pixel-ratio: $i) {
       width: percentage($i);
       height: percentage($i);
-      -webkit-transform: scale(1/$i);
-      transform: scale(1/$i);
+      -webkit-transform: scale(math.div(1, $i));
+      transform: scale(math.div(1, $i));
     }
   }
 }
