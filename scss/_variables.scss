@@ -1,5 +1,17 @@
-// Lists
+$white: #fff !default;
+$gray-300: #e0e0e0 !default;
+$gray-400: #ced4da !default;
+$gray-600: #6c757d !default;
+$gray-900: #212529 !default;
 
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+$border-color: $gray-300 !default;
+$text-muted: $gray-600 !default;
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+// Lists
 $list-item-height: 3rem !default; // 48px
 $list-item-padding-y: ($list-item-height - $font-size-base * $line-height-base) * 0.5; // .75rem;
 $list-item-padding-x: 1rem !default;
