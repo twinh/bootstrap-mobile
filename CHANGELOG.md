@@ -1,3 +1,23 @@
+# [0.10.0](https://github.com/twinh/bootstrap-mobile/compare/v0.9.5...v0.10.0) (2022-06-01)
+
+
+### Bug Fixes
+
+* **bootstrap-mobile:** 指定 node >=12.10.0 ([02635ba](https://github.com/twinh/bootstrap-mobile/commit/02635bad0cb3cdb9f5455aba4c8c7ba6ddf6239e))
+
+
+### BREAKING CHANGES
+
+* **bootstrap-mobile:** 指定 node >=12.0.0
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.1.0` to `8.1.1`
+
 ## [0.9.5](https://github.com/twinh/bootstrap-mobile/compare/v0.9.4...v0.9.5) (2022-02-05)
 
 
