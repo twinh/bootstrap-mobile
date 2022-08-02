@@ -1,3 +1,13 @@
+## [0.10.2](https://github.com/twinh/bootstrap-mobile/compare/v0.10.1...v0.10.2) (2022-08-02)
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.1.2` to `8.1.3`
+
 ## [0.10.1](https://github.com/twinh/bootstrap-mobile/compare/v0.10.0...v0.10.1) (2022-07-01)
 
 
