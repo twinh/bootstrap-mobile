@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-mobile",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "description": "Better mobile support for bootstrap framework",
   "main": "index.js",
   "engines": {
@@ -38,7 +38,7 @@
     "gulp-less": "^3.0.1",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^1.1.0",
-    "@miaoxing/dev": "^8.2.3",
+    "@miaoxing/dev": "^8.2.4",
     "sass": "^1.42.1"
   },
   "ciDependencies": {
